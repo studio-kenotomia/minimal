@@ -1,0 +1,127 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Sidebar
+----------------------------------------------*/
+.sidebar {
+	a {
+		color: #888;
+	}
+}
+
+.sidebar {
+	.widget {
+		margin-bottom: 40px;
+	}
+	.widget-title {
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	.widget_archive {
+		.screen-reader-text {
+			display: none;
+		}
+	}
+	select {
+		border-color: #ddd;
+		color: #888;
+	}
+}
+
+.sidebar, .wpb_widgetised_column {
+	ul li, .recent-posts__item {
+		display: block;
+		padding-bottom: 10px;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word;
+	}
+	.recent-posts__item {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+	.recent-posts > div:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+}
+
+.sidebar, .wpb_widgetised_column {
+	.widget_search {
+		.search-form {
+			position: relative;
+			margin-top: -20px;
+		}
+		span {
+			font-size: 0;
+		}
+		input[type="search"] {
+			border: 1px solid #DDDDDD;
+			background-color: #fff;
+			padding: 15px;
+			margin-bottom: 0;
+		}
+		.search-submit {
+			display: none;
+		}
+	}
+}
+
+.sidebar, .wpb_widgetised_column {
+	.better-menu-widget {
+		ul li {
+			border: 1px solid #dddddd;
+			padding: 0;
+		}
+		li {
+			position: relative;
+			text-transform: uppercase;
+			font-weight: bold;
+			.transit;
+			&:hover {
+				&:before {
+					color: #FFFFFF;
+				}
+			}
+			&:before {
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				transform: translate(0, 0);
+				height: 60px;
+				line-height: 60px;
+				width: 50px;
+				text-align: center;
+				background-color: #EEEEEE;
+				vertical-align: middle;
+				margin-right: 30px;
+				font-size: 24px;
+				.transit;
+			}
+			&:after {
+				content: '';
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 60px 0 0 20px;
+				border-color: transparent transparent transparent #EEEEEE;
+				position: absolute;
+				top: 0;
+				left: 50px;
+				.transit;
+			}
+		}
+	}
+}
+
+@media @xs-max {
+	.sidebar {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
